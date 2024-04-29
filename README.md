@@ -1,1 +1,1 @@
-httpsgithub.comMikhailKlokovzakrivayuschiy-teg-f.git
+https://github.com/MikhailKlokov/zakrivayuschiy-teg-f.git
