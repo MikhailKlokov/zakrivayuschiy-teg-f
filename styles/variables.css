@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font: "PressStart2P-Regular", Papyrus, fantasy;
+    --main-font: "PressStart2P", Papyrus, fantasy;
     --font-weight: 400;
     --color-font: #000000;
     --border-color: rgba(0, 0, 0, 1);
@@ -9,11 +9,11 @@
   linear-gradient(rgb(255, 255, 255) 5%, rgb(26, 26, 26, 0.5) 35%, rgb(26, 26, 26, 0.5) 50%);
     --button-text-color: #ffffff;
     --hidder__button-color: #000;
-    --watermark-color: rgb(255, 255, 255);
-    --card-font: "Inter-Variable", Arial, Helvetica, sans-serif;
-    --heart__sparks-color: red;
- 
-    --heart__contour-color: #000;
+    --watermark-color: rgb(255, 255, 255, 1);
+    --card-font: "Inter", Arial, Helvetica, sans-serif;
+    --heart__sparks-color: #FF0000; /**/
+    --heart__contour-color: #000; /**/
     --padding-right: 0;
     --font-weight-bold: 700;
+    --background-color: rgb(255, 255, 255, 1);
 }
