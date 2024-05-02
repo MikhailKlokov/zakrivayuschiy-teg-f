@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --main-font: "PressStart2P", Papyrus, fantasy;
-    --font-weight: 400;
+    --font-weight-card: 400;
     --color-font: #000000;
     --border-color: rgba(0, 0, 0, 1);
     --background__content-color: #fff;
@@ -16,4 +16,5 @@
     --padding-right: 0;
     --font-weight-bold: 700;
     --background-color: rgb(255, 255, 255, 1);
+    --font-weight-main: 400;
 }

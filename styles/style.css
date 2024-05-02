@@ -26,6 +26,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  font-family: var(--card-font);
+  font-variation-settings: "wght" var(--font-weight-main);
 }
 
 .header {
@@ -33,12 +36,12 @@
   flex-direction: column;
   justify-content: end;
   font-family: var(--main-font), fantasy;
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-main);
   text-transform: uppercase;
   color: var(--color-font);
   border: 2px solid var(--border-color);
   padding-top: 136px;
-  margin: 100px 0 100px 16px;
+  margin: 100px 0 100px;
   width: clamp(375px, 50%, 700px);
   padding-bottom: 25px;
   gap: 22px;
@@ -48,6 +51,7 @@
 }
 
 .header__title {
+  font-weight: var(--font-weight-main);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 1;
 }
@@ -58,12 +62,16 @@
   text-decoration: none;
 }
 
+.header__link:focus {
+  outline: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   gap: 52px;
   width: clamp(375px, 50%, 700px);
-  margin: 0px 0 50px 16px;
+  margin-block-end: 50px;
 }
 
 .theme-menu__list {
@@ -123,11 +131,11 @@
   left: 0;
 }
 
-.card__titel {
+.card__title {
   font-size: 18.2px;
   line-height: 21.78px;
   padding: 4px 9px;
-  font-variation-settings: "wght" var(--font-weight-bold), 785;
+  font-variation-settings: "wght" var(--font-weight-bold);
   border-bottom: 2px solid var(--border-color);
 }
 
@@ -223,9 +231,9 @@
 
 .card__icon-button {
   display: flex;
- 
+  justify-content: center;
   align-items: center;
-  padding: 1px 3px 1px 0px;
+  padding: 1px;
   border: none;
   background-color: transparent;
   outline: none;
@@ -239,7 +247,7 @@
   gap: 28.5px;
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: "wght" var(--font-weight), 465;
+  font-variation-settings: "wght" var(--font-weight-card);
 }
 
 .card__icon-button:focus-visible {
@@ -258,6 +266,7 @@
 .hidder__button-text {
   font-family: var(--main-font);
   font-size: 14px;
+  font-weight: var(--font-weight-main);
   line-height: 12.6px;
   color: var(--color-font);
   position: relative;
@@ -341,13 +350,12 @@
 .dialog[open] {
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
   align-items: center;
   inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
   padding: 30px;
   gap: 30px;
-  margin: 0px 0 24px 17px;
+  
 }
 
 .dialog__content {
@@ -359,6 +367,7 @@
 
 .dialog__content-text {
   font-family: var(--main-font);
+  font-weight: var(--font-weight-main);
   font-size: 14px;
   line-height: 21px;
   color: var(--color-font);
@@ -382,11 +391,7 @@
 }
 
 @media (width <= 375px) {
-  .page {
-    margin-inline-end: 13px;
-  }
-
-  .header {
+   .header {
     gap: 23px;
     padding-block-start: 119px;
   }
@@ -424,9 +429,5 @@
     height: 39px;
   }
 
-  .dialog[open] {
-    margin-block-start: 130px;
-    margin-inline-end: 13px;
-  }
   
 }
